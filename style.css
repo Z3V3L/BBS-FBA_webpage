@@ -3,20 +3,21 @@
 }
 
 /* Palette
-    white: #f1f3de;
-    pink: #eb8f8f;
-    red: #ec0101;
-    dark red: #cd0a0a;
+    pink: #E953D1;
+    Orange: #ffad5b;
+    Blue: #4068DF;
+    Cyan: #8EA7EF; 
 */
 
 /* --- Navbar --- */
 
 .bg-custom {
-    background-color: blueviolet;
+    background: linear-gradient(to right, #4068DF, white);
 
 }
 
-body {
-    
+
+#navbarNavAltMarkup {
+    justify-content: end;
 }
 
