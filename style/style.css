@@ -13,13 +13,17 @@ body {
     background-image: url('background.png');
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-position: center;  /* If removed, the background is static or it can be changed to background-position-x: center; */
-    background-size: 1920px 1200px;
+    background-position: top 65px center;  /* If removed, the background is static or it can be changed to background-position-x: center; */
+    background-size: 100vmax auto/*1920px 1200px*/;
 
+}
+@media only screen and (max-width: 991px) {
+    body {
+        background-image: url('');}
 }
 
 div#pink-part {
-    width: 110px;
+    width: 9.7vmax;
     height: 100%;
     background-color: #E953D1;
     position: fixed;
@@ -41,7 +45,7 @@ a.navbar-brand {
 a.navbar-brand:hover {
     padding: -7px;
     margin: -7px;
-    transition: all 100ms;
+    ransition: all 100ms;
 }
 
 nav a.navbar-brand img {
@@ -57,12 +61,12 @@ nav a.navbar-brand img:hover {
 #navbarNavAltMarkup {
     justify-content: end; 
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     #navbarNavAltMarkup{
         padding: 10px 15px 5px;
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     #navbarNavAltMarkup a{
         padding-left: 16px;
     }
@@ -70,4 +74,14 @@ nav a.navbar-brand img:hover {
 
 /* --- End of Navbar --- */
 
+
+/* --- Content --- */
+
+div.container div.row div{
+    border: 1px darkslategray solid;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* --- End of Content --- */
 
