@@ -77,19 +77,46 @@ nav a.navbar-brand img:hover {
 /* --- Content --- */
 main {
     margin-top: 66px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-div.container div.row div div{
+@media only screen and (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1700px;
+    }
+}
+
+div.row div div{
     border: 1px darkslategray solid;
-    margin: 14px 0;
+    margin: 12px 0;
     padding: 20px;
-    height: 28.5vmax;
+    height: 28.8vmax;
 }
 @media only screen and (min-width: 1200px) {
-    div.container div.row div div{
+    div.row div div{
         height: 29.2vmax;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    div.row div div{
+        height: 29.6vmax;
+    }
+}
+@media only screen and (min-width: 1800px) {
+    div.row div div{
+        height: 29.8vmax;
     }
 }
 
 /* --- End of Content --- */
+
+/* --- Footer --- */
+
+footer {
+    background-color: blueviolet;
+    height: 50px;
+}
+
+/* --- End of Footer --- */
 
