@@ -45,7 +45,7 @@ a.navbar-brand {
 a.navbar-brand:hover {
     padding: -7px;
     margin: -7px;
-    ransition: all 100ms;
+    transition: all 100ms;
 }
 
 nav a.navbar-brand img {
