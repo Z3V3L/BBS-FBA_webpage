@@ -16,11 +16,12 @@ body {
     background-size: 100vmax auto/*1920px 1200px*/;
 
 }
+
 @media only screen and (max-width: 991px) {
     body {
         background-image: url('backgroud-phone.png');
         background-position: 9.7vmax center;
-        background-size: 91% 92%;
+        background-size: 91% 89%;
     }
 }
 
