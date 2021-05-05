@@ -21,7 +21,14 @@ body {
     body {
         background-image: url('backgroud-phone.png');
         background-position: 9.7vmax center;
-        background-size: 91% 89%;
+        background-size: 91% 130vmax;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body {
+        background-image: url('backgroud-phone.png');
+        background-position: 9.7vmax center;
+        background-size: 91% 130vmax;
     }
 }
 
