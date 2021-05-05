@@ -12,13 +12,16 @@
 body {
     background-image: url('background.png');
     background-repeat: no-repeat; 
-    background-position: top 65px center;  /* If removed, the background is static or it can be changed to background-position-x: center; */
+    background-position: center 65px; 
     background-size: 100vmax auto/*1920px 1200px*/;
 
 }
 @media only screen and (max-width: 991px) {
     body {
-        background-image: url('');}
+        background-image: url('backgroud-phone.png');
+        background-position: 9.7vmax center;
+        background-size: 91% 92%;
+    }
 }
 
 div#pink-part {
@@ -33,6 +36,7 @@ div#pink-part {
 /* --- Navbar --- */
 
 .bg-custom {
+    background-color: #4068DF;
     background: linear-gradient(to right, #4068DF, white);
 
 }
@@ -44,6 +48,10 @@ a.navbar-brand {
 a.navbar-brand:hover {
     padding: -7px;
     margin: -7px;
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    -ms-transition: all 100ms;
+    -o-transition: all 100ms;
     transition: all 100ms;
 }
 
@@ -87,8 +95,13 @@ main {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    div.row div div{
+        height: 35vmax;
+    }
+}
 div.row div div{
-    border: 1px darkslategray solid;
+    border: 2px darkslategray solid;
     margin: 12px 0;
     padding: 20px;
     height: 28.8vmax;
@@ -115,7 +128,7 @@ div.row div div{
 
 footer {
     background-color: blueviolet;
-    height: 50px;
+    height: 64px;
 }
 
 /* --- End of Footer --- */
