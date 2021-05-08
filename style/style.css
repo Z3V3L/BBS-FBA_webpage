@@ -9,11 +9,19 @@
     Cyan: #8EA7EF; 
 */
 
+
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+
 body {
     background-image: url('background.png');
     background-repeat: no-repeat; 
-    background-position: center 65px; 
-    background-size: 100vmax auto/*1920px 1200px*/;
+    background-position: center 0; 
+    background-size: 1920px 1200px/*1920px 1200px*/;
 
 }
 
@@ -112,16 +120,16 @@ div.row div div{
     border: 2px darkslategray solid;
     margin: 12px 0;
     padding: 20px;
-    height: 28.8vmax;
+    height: 200px;
 }
 @media only screen and (min-width: 1200px) {
     div.row div div{
-        height: 29.2vmax;
+        height: 510px;
     }
 }
 @media only screen and (min-width: 1500px) {
     div.row div div{
-        height: 29.6vmax;
+        height: 100%;
     }
 }
 @media only screen and (min-width: 1800px) {
