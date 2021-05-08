@@ -15,22 +15,6 @@ body {
     background-repeat: no-repeat; 
     background-position: center 0px; 
     background-size: 1920px 1200px/*1920px 1200px*/;
-
-}
-@media only screen and (max-width: 550px) {
-    body {
-        background-image: url('backgroud-phone.png');
-        background-repeat: no-repeat; 
-        background-position: 9.7vmax center;
-        background-size: 91% 95%;
-    }
-}
-@media only screen and (max-width: 991px) {
-    body {
-        background-image: url('backgroud-phone.png');
-        background-position: 9.7vmax center;
-        background-size: 91% 151vmax;
-    }
 }
 
 div#pink-part {
@@ -96,13 +80,6 @@ main {
     margin-right: 40px;
 }
 
-@media only screen and (min-width: 992px) {
-    .container, .container-lg, .container-md, .container-sm {
-        max-width: 1700px;
-    }
-}
-
-
 div.row div div{
     border: 2px darkslategray solid;
     margin: 12px 0;
@@ -152,3 +129,43 @@ footer {
 
 /* --- End of Footer --- */
 
+
+/* --- Media queries --- */
+
+@media only screen and (max-width: 991px) {
+    body {
+        background-image: url('backgroud-phone.png');
+        background-position: 9.7vmax center;
+        background-size: 91% 151vmax;
+    }
+
+    div.row div div{
+        height: 35vmax;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body {
+        background-image: url('backgroud-phone.png');
+        background-repeat: no-repeat; 
+        background-position: 9.7vmax center;
+        background-size: 91% 95%;
+    }
+
+    div.row div div{
+        height: 70vmax;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1700px;
+    }
+}
+@media only screen and (min-width: 1921px) {
+    div.row div div{
+        height: 29.8vmax;
+    }
+}
+
+
+/* --- End of Media queries --- */
