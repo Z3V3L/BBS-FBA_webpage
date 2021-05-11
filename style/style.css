@@ -60,16 +60,11 @@ nav a.navbar-brand img:hover {
 #navbarNavAltMarkup {
     justify-content: end; 
 }
-@media only screen and (max-width: 991px) {
-    #navbarNavAltMarkup{
-        padding: 10px 15px 5px;
-    }
+
+.navbar-toggler {
+    border: none;
 }
-@media only screen and (min-width: 992px) {
-    #navbarNavAltMarkup a{
-        padding-left: 16px;
-    }
-}
+
 /* --- End of Navbar --- */
 
 
@@ -80,28 +75,20 @@ main {
     margin-right: 40px;
 }
 
-div.row div div{
+div.row div #intro,
+div.row div #aboutUs,
+div.row div #sanitation,
+div.row div #education {
     border: 2px darkslategray solid;
     margin: 12px 0;
     padding: 20px;
     height: 510px;
 }
 
-@media only screen and (max-width: 550px) {
-    div.row div div{
-        height: 70vmax;
-    }
+h1, h2 {
+    text-align: center;
 }
-@media only screen and (max-width: 991px) {
-    div.row div div{
-        height: 35vmax;
-    }
-}
-@media only screen and (min-width: 1921px) {
-    div.row div div{
-        height: 29.8vmax;
-    }
-}
+
 /*@media only screen and (min-width: 1200px) {
     div.row div div{
         height: 29.2vmax;
@@ -123,8 +110,13 @@ div.row div div{
 /* --- Footer --- */
 
 footer {
-    background-color: blueviolet;
+    background-color: #8ea7ef;
+    color: darkslategray;
     height: 64px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 /* --- End of Footer --- */
@@ -133,10 +125,13 @@ footer {
 /* --- Media queries --- */
 
 @media only screen and (max-width: 991px) {
+
+    /* Cambio de background por versión de teléfono */
     body {
         background-image: url('backgroud-phone.png');
+        background-repeat: no-repeat; 
         background-position: 9.7vmax center;
-        background-size: 91% 151vmax;
+        background-size: 91% 95%;
     }
 
     div.row div div{
@@ -155,6 +150,8 @@ footer {
         height: 70vmax;
     }
 }
+
+/* aumento de dimesiones para dispositivos con muy alta resolución */
 
 @media only screen and (min-width: 992px) {
     .container, .container-lg, .container-md, .container-sm {
