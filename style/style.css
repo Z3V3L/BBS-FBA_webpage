@@ -1,5 +1,6 @@
 * {
     font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
 }
 
 /* Palette
@@ -69,6 +70,7 @@ nav a.navbar-brand img:hover {
 
 
 /* --- Content --- */
+
 main {
     margin-top: 66px;
     margin-left: 40px;
@@ -81,31 +83,50 @@ div.row div #sanitation,
 div.row div #education {
     border: 2px darkslategray solid;
     margin: 12px 0;
-    padding: 20px;
+    padding: 45px;
     height: 510px;
 }
 
 h1, h2 {
     text-align: center;
+    font-family: 'Comfortaa', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/*@media only screen and (min-width: 1200px) {
-    div.row div div{
-        height: 29.2vmax;
-    }
+h1 {
+    font-size: 47px;
+    margin-top: 50px;
 }
-@media only screen and (min-width: 1500px) {
-    div.row div div{
-        height: 29.6vmax;
-    }
+h2 {
+    font-size: 27px;
 }
-@media only screen and (min-width: 1800px) {
-    div.row div div{
-        height: 29.8vmax;
-    }
-}*/
 
+/* Intro Icons */
+div#intro img {
+    width: 80px;
+
+}
+#Icons {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    height: 82px;
+}
+.leftIcons {
+    transform: scaleX(-1);
+}
+
+div#intro p{
+    margin-top: 35px;
+    text-align: center;
+}
 /* --- End of Content --- */
+
+
 
 /* --- Footer --- */
 
@@ -134,30 +155,57 @@ footer {
         background-size: 91% 95%;
     }
 
+    /* Navbar */
+    div.navbar-nav {
+        padding: 10px 20px;
+    }
+
+    /* Content */
     div.row div div{
-        height: 35vmax;
+        height: 40vmin;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    /* Intro Icons */
+    div#intro img {
+        width: 60px;
+    }
+    #Icons {
+        height: 62px;
+    }
+    div#intro p{
+        margin-top: 35px;
     }
 }
-@media only screen and (max-width: 550px) {
-    body {
-        background-image: url('backgroud-phone.png');
-        background-repeat: no-repeat; 
-        background-position: 9.7vmax center;
-        background-size: 91% 95%;
-    }
-
-    div.row div div{
-        height: 70vmax;
-    }
-}
-
-/* aumento de dimesiones para dispositivos con muy alta resolución */
-
 @media only screen and (min-width: 992px) {
     .container, .container-lg, .container-md, .container-sm {
         max-width: 1700px;
     }
+    div.row div div{
+        height: 30vmax;
+    }
+
+    div.row div #intro,
+    div.row div #aboutUs,
+    div.row div #sanitation,
+    div.row div #education {
+        padding: 55px;
+    }
 }
+@media only screen and (min-width: 1124px) {
+    div.row div #intro,
+    div.row div #aboutUs,
+    div.row div #sanitation,
+    div.row div #education {
+        padding: 55px 6.5vmax 0;
+    }
+}
+
+/* aumento de dimesiones para dispositivos con muy alta resolución */
 @media only screen and (min-width: 1921px) {
     div.row div div{
         height: 29.8vmax;
