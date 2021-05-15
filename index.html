@@ -36,9 +36,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" href="#">Inicio<span class="sr-only">(current)</span></a>
-                        <a class="nav-link" href="#">Sobre nosotros</a>
-                        <a class="nav-link" href="#">Oferta educativa</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#aboutUs">Sobre nosotros</a>
+                        <a class="nav-link" href="#education">Oferta educativa</a>
+                        <a class="nav-link" href="#contactUs">Contacto</a>
                     </div>
                 </div>
             </nav>
@@ -50,7 +50,7 @@
         <div id="pink-part">Pink part</div>
 
         <main>
-            <div class="container">
+            <div class="container" >
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="overflow-auto" id="intro">
@@ -78,7 +78,11 @@
                     <div class="col-lg-5">
                         <div class="overflow-auto" id="sanitation">
                             <p>Contamos con <strong>modalidad online</strong> y <strong>modalidad presencial</strong> cumpliendo todas las medidas de seguridad sanitaria.</p>
-                            <p>*Clases presenciales únicamente en     Las américas, Ecatepec de Morelos.  Favor  de ponerse en contacto para     más información.</p>
+                            <div id="Icons">
+                                <img src="style/017-hand sanitizer.png" alt="">
+                                <img src="style/015-spray.png" alt="">
+                            </div>
+                            <p class="contentFooter">*Clases presenciales únicamente en Las américas, Ecatepec de Morelos. Favor  de ponerse en contacto para más información.</p>
                         </div> 
                     </div>
 
@@ -91,28 +95,32 @@
                                 <li data-target="#carousel1" data-slide-to="0" class="active"></li>
                                 <li data-target="#carousel1" data-slide-to="1"></li>
                                 <li data-target="#carousel1" data-slide-to="2"></li>
+                                <li data-target="#carousel1" data-slide-to="3"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                <img src="https://placekitten.com/720/480" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
-                                </div>
-                                </div>
-                                <div class="carousel-item">
-                                <img src="https://placekitten.com/720/500" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
+                                    <img src="style/guitar.jpg" class="d-block w-100" alt="Guitarra">
+                                    <div class="carousel-caption d-none d-block">
+                                        <h2 id="guitarTitle">Guitarra</h2>
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                <img src="https://placekitten.com/720/490" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
+                                    <img src="style/mic.jpg" class="d-block w-100" alt="Canto">
+                                    <div class="carousel-caption d-none d-block">
+                                        <h2 id="singingTitle">Canto</h2>
+                                    </div>
                                 </div>
+                                <div class="carousel-item">
+                                    <img src="style/violin.jpg" class="d-block w-100" alt="Violín">
+                                    <div class="carousel-caption d-none d-block">
+                                        <h2 id="violinTitle">Violín</h2>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="style/ballet-don-quijote.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-block">
+                                        <h2 id="actingTitle">Actuación</h2>
+                                    </div>
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
@@ -134,12 +142,14 @@
 
         <footer>
             <p><small>&copy;2021-BBSFBA</small></p>
-            <p>Contáctanos</p>
+            <p id="contactUs">Contáctanos</p>
         </footer>
 
         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+        <!-- Custom JavaScript -->
+        <script src="js/script.js"></script>
     </body>
 </html>

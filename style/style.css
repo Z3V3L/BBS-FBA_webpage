@@ -25,6 +25,10 @@ div#pink-part {
     position: fixed;
     z-index: -1;
     text-indent: -9999px;
+    margin-top: -66px;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 /* --- Navbar --- */
@@ -65,6 +69,33 @@ nav a.navbar-brand img:hover {
 .navbar-toggler {
     border: none;
 }
+
+/* Transition animation */
+/*nav.navbar{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+
+nav.bg-custom.transparent {
+    background-color: #3f67deb3;
+    background: linear-gradient(to right, hsla(225, 71%, 56%, 0.6), #ffffff5e);
+}
+
+nav.bg-custom.transparent a.nav-link {
+    color: white;
+}
+nav.bg-custom.transparent a.nav-link:hover,
+nav.bg-custom.transparent a.nav-link:active {
+    color: #ffad5b;
+}
+nav.bg-custom.transparent a.nav-link.active {
+    color: #ffad5b;
+}*/
 
 /* --- End of Navbar --- */
 
@@ -124,6 +155,24 @@ div#intro p{
     margin-top: 35px;
     text-align: center;
 }
+
+
+/* Sanitation icons */
+div#sanitation img {
+    width: 80px;
+}
+
+div#sanitation,
+div#education {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+
 /* --- End of Content --- */
 
 
@@ -161,10 +210,12 @@ footer {
     }
 
     /* Content */
-    div.row div div{
-        height: 40vmin;
-    }
 
+    /* Carousel */
+    div.row div div {
+        height: 38vmin;
+    }
+    
     h1 {
         font-size: 40px;
         margin-top: 40px;
@@ -180,13 +231,29 @@ footer {
     div#intro p{
         margin-top: 35px;
     }
+
+    div#education h2#guitarTitle {
+        margin-top: 25vmin;
+    }
+    div#education h2#singingTitle {
+        margin-top: 4vmin;
+    }
+    div#education h2#violinTitle {
+        text-shadow: 2px 2px 2px #000000;
+        margin-top: 24vmin;
+    }
+    div#education h2#actingTitle {
+        margin-top: 4vmin;
+    }
 }
 @media only screen and (min-width: 992px) {
     .container, .container-lg, .container-md, .container-sm {
         max-width: 1700px;
     }
+
+    /* Carousel */
     div.row div div{
-        height: 30vmax;
+        height: 22vmax;
     }
 
     div.row div #intro,
@@ -194,6 +261,20 @@ footer {
     div.row div #sanitation,
     div.row div #education {
         padding: 55px;
+    }
+
+    div#education h2#guitarTitle {
+        margin-top: 16vmax;
+    }
+    div#education h2#singingTitle {
+        margin-top: 3vmax;
+    }
+    div#education h2#violinTitle {
+        text-shadow: 2px 2px 2px #000000;
+        margin-top: 15vmax;
+    }
+    div#education h2#actingTitle {
+        margin-top: 3vmax;
     }
 }
 @media only screen and (min-width: 1124px) {
