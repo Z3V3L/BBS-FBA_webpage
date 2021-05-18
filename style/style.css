@@ -32,6 +32,7 @@ html {
 }
 
 /* --- Navbar --- */
+
 .bg-custom {
     background-color: #4068DF;
     background: linear-gradient(to right, #4068DF, white);
@@ -131,7 +132,7 @@ h2 {
     font-size: 27px;
 }
 
-/* Intro Icons */
+/* Intro */
 div#intro img {
     width: 80px;
 
@@ -156,8 +157,21 @@ div#intro p{
     text-align: center;
 }
 
+/* About us */
+div#aboutUs div#description {
+    
+}
+div#aboutUs img {
+    height: 250px;
+    width: 228.6px;
+    display: block;
+    margin: 20px auto;
+}
+div#aboutUs div#description p {
+    margin-left: 0;
+}
 
-/* Sanitation icons */
+/* Sanitation */
 div#sanitation img {
     width: 80px;
 }
@@ -189,10 +203,42 @@ footer {
     
 }
 
+footer p small {
+    display: block;
+}
+footer p small a {
+    font-size: small;
+    color: #ffad5b;
+}
+
+footer div#contactUs p{
+    display: inline;
+    margin-right: 10px;
+}
+
+footer div#socialLinks {
+    display: inline;
+}
+
+footer div#socialLinks img {
+    height: 40px;
+}
+
 /* --- End of Footer --- */
 
 
 /* --- Media queries --- */
+@media only screen and (min-width: 600px) {
+    div#aboutUs div#description {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+    div#aboutUs div#description p {
+        margin-left: 20px;
+    }
+}
 
 @media only screen and (max-width: 991px) {
 
