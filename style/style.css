@@ -158,14 +158,10 @@ div#intro p{
 }
 
 /* About us */
-div#aboutUs div#description {
-    
-}
 div#aboutUs img {
     height: 250px;
-    width: 228.6px;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 div#aboutUs div#description p {
     margin-left: 0;
@@ -184,6 +180,12 @@ div#education {
     flex-direction: column;
     -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
+}
+
+/* Education */
+div#education small {
+    margin-top: 14px;
+    padding-bottom: 20px;
 }
 
 
@@ -210,6 +212,9 @@ footer p small a {
     font-size: small;
     color: #ffad5b;
 }
+footer p small span#footerHide {
+    font-size: small;
+}
 
 footer div#contactUs p{
     display: inline;
@@ -222,23 +227,13 @@ footer div#socialLinks {
 
 footer div#socialLinks img {
     height: 40px;
+    padding-right: 8px;
 }
 
 /* --- End of Footer --- */
 
 
 /* --- Media queries --- */
-@media only screen and (min-width: 600px) {
-    div#aboutUs div#description {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-    }
-    div#aboutUs div#description p {
-        margin-left: 20px;
-    }
-}
 
 @media only screen and (max-width: 991px) {
 
@@ -256,11 +251,6 @@ footer div#socialLinks img {
     }
 
     /* Content */
-
-    /* Carousel */
-    div.row div div {
-        height: 38vmin;
-    }
     
     h1 {
         font-size: 40px;
@@ -278,6 +268,11 @@ footer div#socialLinks img {
         margin-top: 35px;
     }
 
+    /* Carousel */
+    div.row div div {
+        height: 35vmin;
+    }
+
     div#education h2#guitarTitle {
         margin-top: 25vmin;
     }
@@ -292,9 +287,67 @@ footer div#socialLinks img {
         margin-top: 4vmin;
     }
 }
+
+@media only screen and (max-width: 599px) {
+
+    /* #aboutUs */
+    div#aboutUs div#description img {
+        height: 180px;
+    }
+    div#aboutUs div#description p {
+        margin-top: 14px;
+    }
+
+    /* Carousel */
+    div#education h2#guitarTitle {
+        margin-top: 20vmin;
+        font-size: 22px;
+    }
+    div#education h2#singingTitle {
+        font-size: 22px;
+    }
+    div#education h2#violinTitle {
+        margin-top: 20vmin;
+        font-size: 22px;
+    }
+    div#education h2#actingTitle {
+        font-size: 22px;
+    }
+
+    /* footer */
+    footer div#contactUs p,
+    footer p small span#footerHide {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* #aboutUs */
+    div#aboutUs div#description {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+    div#aboutUs div#description p {
+        margin-left: 20px;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     .container, .container-lg, .container-md, .container-sm {
         max-width: 1700px;
+    }
+
+    /* #aboutUs */
+    div#aboutUs div#description {
+        display: block
+    }
+    div#aboutUs div#description p {
+        margin-top: 14px;
+        margin-left: 0;
     }
 
     /* Carousel */
@@ -323,6 +376,7 @@ footer div#socialLinks img {
         margin-top: 3vmax;
     }
 }
+
 @media only screen and (min-width: 1124px) {
     div.row div #intro,
     div.row div #aboutUs,
@@ -332,10 +386,53 @@ footer div#socialLinks img {
     }
 }
 
-/* aumento de dimesiones para dispositivos con muy alta resolución */
+@media only screen and (min-width: 1381px) {
+
+    /* #aboutUs */
+    div#aboutUs div#description {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        height: 300px;
+    }
+    div#aboutUs div#description p {
+        margin-left: 20px;
+    }
+    div#aboutUs img {
+        height: 200px;
+        
+    }
+}
+
+
+/* Optimización para dispositivos con muy alta resolución */
 @media only screen and (min-width: 1921px) {
+
+    /* #aboutUs */
+    div#aboutUs div#description {
+        display: block
+    }
+    div#aboutUs div#description p {
+        margin-top: 14px;
+        margin-left: 0;
+    }
+    
+    /* Carousel */
     div.row div div{
-        height: 29.8vmax;
+        height: 400px;
+    }
+    div#education h2#guitarTitle {
+        margin-top: 200px;
+    }
+    div#education h2#singingTitle {
+        margin-top: 40px;
+    }
+    div#education h2#violinTitle {
+        margin-top: 180px;
+    }
+    div#education h2#actingTitle {
+        margin-top: 40px;
     }
 }
 
