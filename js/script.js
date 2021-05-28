@@ -1,7 +1,7 @@
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-      $('nav').addClass('transparent');
-    } else {
-      $('nav').removeClass('transparent');
-    }
+$('body').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
+
+$('a#contact').on('click', function(){
+  $('#contactAnounce').modal('show');
 });
