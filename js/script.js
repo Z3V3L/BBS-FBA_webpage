@@ -3,5 +3,13 @@ $('body').on('click', function(){
 });
 
 $('a#contact').on('click', function(){
-  $('#contactAnounce').modal('show');
+
+  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    $('#contactAnounce').modal('show');
+  } else {
+    setTimeout(function(){ 
+      $('#contactAnounce').modal('show'); 
+    }, 600);
+  }
 });
+
