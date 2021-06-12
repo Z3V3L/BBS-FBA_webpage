@@ -349,11 +349,67 @@ footer div#socialLinks img {
 }
 
 @media only screen and (max-width: 443px) {
-    
+    /* Containers */
+    main {
+        margin: 66px 20px 0;
+    }
+
     /* #intro */
     div#intro p{
         margin-top: 54px;
 
+    }
+}
+@media only screen and (max-width: 323px) {
+
+    /* Containers */
+    main {
+        margin: 66px 20px -64px;
+
+    }
+    div.row div #intro,
+    div.row div #aboutUs,
+    div.row div #sanitation,
+    div.row div #education {
+        padding: 45px 30px;
+    }
+    ol.carousel-indicators {
+        display: none;
+    }
+
+    /* #intro */
+    div#intro div#Icons {
+        height: 124px;
+    }
+    div#intro p.lead {
+        margin: 0;
+    }
+    
+    /* #sanitation */
+    div#sanitation #Icons{
+        height: 160px;
+    }
+    div#sanitation {
+        margin-bottom: 200px;
+    }
+
+    /* Footer */
+    footer {
+        height: 128px;
+        flex-direction: column;
+        
+    }
+    footer div#contactUs{
+        margin: 0 auto;
+    }
+
+    /*position: absolute;
+        bottom: -1730px;*/
+}
+@media only screen and (max-width: 253px) {
+    /* #intro */
+    div#intro div#Icons .leftIcons{
+        display: none;
     }
 }
 
